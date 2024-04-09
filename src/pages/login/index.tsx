@@ -9,7 +9,7 @@ const LoginPage: FC = () => {
 
   return (
     <Auth
-      error={error ? "Credentials are not valid." : ""}
+      error={error}
       submitLabel="Login"
       onSubmit={(request) => login(request)}
     >
